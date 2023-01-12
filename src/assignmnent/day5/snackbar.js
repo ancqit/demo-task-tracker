@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 export default function SimpleSnackbar(props) {
   const [open, setOpen] = React.useState(false);
 useEffect(()=>{
-    if(props.submitClicked>1)handleClick();
+    if(props.submitClicked>0)handleClick();
 },[props.submitClicked]);
   const handleClick = () => {
     

@@ -20,7 +20,7 @@ export default function SignUpBox() {
   };
   const [formValues, setFormValues] = useState(initialValues);
   const [isDisabled, setIsDisabled] = useState(true);
-  let [submitClicked, setSubmitClicked] = useState(1);
+  let [submitClicked, setSubmitClicked] = useState(0);
   let username = "Username";
   let email = "Email";
   let password = "Password";
@@ -51,7 +51,8 @@ export default function SignUpBox() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitClicked(submitClicked++);
+    submitClicked+=1;
+    setSubmitClicked(submitClicked);
   };
 
   const handleChangeCheck = (e) => {
