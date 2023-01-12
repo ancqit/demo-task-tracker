@@ -1,0 +1,16 @@
+
+.signUpContainer{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.form{
+    margin-top: 3%;
+    border: 1px solid burlywood;
+    background-color: white;
+}
+.labelDiv{
+    margin-top: 3vh;
+}
