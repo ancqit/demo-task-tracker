@@ -45,19 +45,18 @@ export default function SignUpBox() {
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name,value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitClicked(submitClicked++);
-    console.log(formValues);
   };
 
   const handleChangeCheck = (e) => {
-    console.log(e.target.checked);
-    setIsDisabled(false);
+    if(e.target.checked)setIsDisabled(false);
+    if(!e.target.checked)setIsDisabled(true);
   };
 
   return (
