@@ -43,12 +43,12 @@
   background-color: black;
 }
 .cards{
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
   position:absolute;
   top:0px;
   right:0px;
   bottom:0px;
   left:0px;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJh6pDSpPUOd016tMjms4NBgQpZgLFmR8Gw&usqp=CAU);
+  /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJh6pDSpPUOd016tMjms4NBgQpZgLFmR8Gw&usqp=CAU); */
 
 }

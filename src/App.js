@@ -3,7 +3,10 @@ import './App.css';
 // import { useState } from 'react';
 // import Car from './counter';
 // import Youtube from './assignmnent/day4/youtube';
-import SignUpBox from './assignmnent/day5/signUpBox';
+// import SignUpBox from './assignmnent/day5/signUpBox';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import TaskManager from './assignmnent/day6/taskManager';
 
 // const Person = (props) => {
 //   return (
@@ -24,9 +27,12 @@ const App=()=> {
   // let counter;
 
   return (
-    <div className="App">
+    
+    <div >
       <div className='cards'>
-        <SignUpBox />
+      {/* <TaskManager /> */}
+        {/* <SignUpBox /> */}
+        <TaskManager />
       {/* <Youtube  /> */}
       </div>
       {/* <Car color='blue' />
@@ -44,7 +50,9 @@ const App=()=> {
       <button className='upper' onClick={()=> setCounter((prevCount)=> prevCount + 1)}> <h1>+</h1></button>
       <h1> {counter} </h1>
       <button className='lower' onClick={()=> setCounter((prevCount)=>prevCount === 0 ? 0: prevCount - 1)}><h1>-</h1></button> */}
+     <ToastContainer />
     </div>
+    
   );
 }
 

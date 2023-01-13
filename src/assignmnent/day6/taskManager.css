@@ -1,0 +1,40 @@
+.todoBox {
+  width: 60%;
+  border: 2px solid rgb(160, 160, 244);
+  background-color: rgb(204, 227, 247);
+  border-radius: 13px;
+}
+.taskContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.itemsAlign {
+  display: flex;
+  justify-content: center;
+}
+.taskBetween {
+  display: flex;
+  justify-content: space-between;
+  border-radius:10px;
+  border:2px solid gold;
+  margin: 3px;
+
+}
+.pd-2 {
+  padding: 4px;
+}
+.taskComplete {
+  
+  /* border-inline-start:1rem solid green; 
+   */
+   border-left: 10px solid green;
+writing-mode: horizontal-tb;
+}
+.taskIncomplete {
+ border-inline-start:1rem solid red;
+  writing-mode: horizontal-tb;
+}
+.buttonHeight button{
+    height: 100% !important;
+}
