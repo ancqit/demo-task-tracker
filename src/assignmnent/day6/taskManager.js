@@ -26,7 +26,6 @@ export default function TaskManager() {
     setIsLoading(true);
     try {
       const { data } = await axios.get();
-      toast.success("Tasks Feteched");
       setTasks(data);
       setIsLoading(false);
     } catch (error) {
